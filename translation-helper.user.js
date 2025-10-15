@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Translation Helper
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/NBKelly/jinteki-translation-helper
 // @version      2025-10-15
 // @description  Make translating stuff via i18n easier for the user
 // @author       nbkelly
@@ -8,6 +8,8 @@
 // @match        *://127.0.0.1/*
 // @match        *://*.jinteki.net/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=jinteki.net
+// @license      MIT
+// @run-at       document-end
 // @grant        none
 // ==/UserScript==
 
