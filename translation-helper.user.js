@@ -31,7 +31,6 @@
             // highlight
             el.style.outline = `2px solid ${HIGHLIGHT_COLOR}`;
             el.style.outlineOffset = "2px";
-            el.title = `i18n key: ${key}`;
         }
     }
 
@@ -115,7 +114,8 @@
         // Look up English message
         let englishComment = "";
         if (enMessages[key]) {
-            englishComment = `# English reference: ${enMessages[key]}\n`;
+            let cmt = enMessages[key].split("\n").map(line => `# ${line}`).join("\n");
+            englishComment = `# English reference: ${cmt}\n`;
         }
 
         const state = {
